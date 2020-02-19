@@ -8,9 +8,10 @@ export const getJokes = ()=> dispatch => {
     dispatch({ type: FETCH_JOKES_START });
     axios
     .get('https://official-joke-api.appspot.com/jokes/ten')
-    .then(response =>
-        dispatch({type: FETCH_JOKES_SUCCESS, payload: response.data}))
-        console.log(respone.data)
+    .then(response =>{
+        console.log('I am the axios call',response)
+        dispatch({type: FETCH_JOKES_SUCCESS, payload: response.data})})
+        
         .catch(error => dispatch({type: FETCH_JOKES_FAIL, payload: error}))
 
 };
