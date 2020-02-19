@@ -16,8 +16,8 @@ In this project you'll choose an api to consume. You will build an application f
 
 ## Project Set Up
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your team lead as collaborator on Github.
+- [x] Create a forked copy of this project.
+- [x] Add your team lead as collaborator on Github.
 - [ ] Clone your OWN version of the repository in your terminal
 - [ ] CD into the project base directory `cd react-redux-app`
 - [ ] Use CRA to create a new React app, the `cd` into the react app
