@@ -12,11 +12,11 @@ const Display=props=>{
     console.log('These are props',props)
    
     return(
-        <div>
+        <div className="jokes-container">
             {props.jokes.map(jokes=>{
                 
                 return(
-                    <div>
+                    <div className="jokes">
                         <p>{jokes.setup}</p>
                         <p>{jokes.punchline}</p>
                     </div>
