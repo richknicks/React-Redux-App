@@ -5,9 +5,8 @@ import { FETCH_JOKES_START, FETCH_JOKES_SUCCESS, FETCH_JOKES_FAIL } from '../act
 const initialState = {
      
     
-    setup: null,
-    punchline: null
-    
+   jokes:[]
+     
 };
 
 export const reducer = (state = initialState, action)=>{
@@ -22,8 +21,7 @@ export const reducer = (state = initialState, action)=>{
         case FETCH_JOKES_SUCCESS:
             return{
                 ...state,
-                setup: action.payload,
-                punchline: action.payload,
+                jokes: action.payload,
                 isFetching: false,
                 error:''
             };
