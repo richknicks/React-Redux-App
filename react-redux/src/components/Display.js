@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import React,  { useEffect } from 'react';
 import  {getJokes}  from '../action/index';
-
+import cuid from 'cuid';
 
 
 
@@ -16,7 +16,7 @@ const Display=props=>{
             {props.jokes.map(jokes=>{
                 
                 return(
-                    <div className="jokes">
+                    <div key={cuid()}className="jokes">
                         <p>{jokes.setup}</p>
                         <p>{jokes.punchline}</p>
                     </div>
